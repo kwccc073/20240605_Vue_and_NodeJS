@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.27/vue.global.min.js
+        integrity="sha512-jDpwxJN+g4BhXLdba5Z1rn2MpR9L5Wp3WVf2dJt5A0mkPHnHLZHZerpyX4JC9bM0pkCL7RmAR8FwOm02h7RKFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        Vue.createApp({
+
+        })
+            .mount('#app')
+
+        //組合式API架構
+        // 解構
+        const { ref, reactive, computed, watch, onMounted, onCreated } = Vue
+
+        Vue.createApp({
+            setup() {
+                // 定義響應式數據（相當於data(){}）
+                const data1 = ref('');
+                const data2 = ref([{}, {}, {}]);
+
+                // 相當於computed:{}
+                const fuction11 = computed(() => { });
+                const fuction12 = computed(() => { });
+
+                // 相當於methods:{}
+                const fuction21 = () => { };
+                const fuction22 = () => { };
+
+                // 相當於watch:{}
+                watch(data1, (newValue, oldValue) => { });
+                watch(data2, (newValue, oldValue) => { });
+
+
+                // 生命週期
+                // 相當於created(){}
+                onCreated(() => { });
+
+                // 相當於mounted(){}
+                onMounted(() => { });
+
+                return {
+                    data1, data2, fuction11, fuction12, fuction21, fuction22
+                };
+
+            }
+        })
+            .mount('#app')
+
+    </script>
+</body>
+
+</html>
