@@ -5,18 +5,13 @@
         li(v-for="club in clubs" :key="club") {{ club }}
 </template>
 
+//
+setup表示裡面都是setup的東西，可以省略很多東西，參考筆記：https://hackmd.io/wc1oexPaTD6QmgJJpNBloQ?both
 <script setup>
-const clubs = [
-  '吉他社',
-  '熱舞社',
-  '棒球社',
-  '羽球社',
-  '足球社',
-  '童軍社'
-]
-
+const clubs = ["吉他社", "熱舞社", "棒球社", "羽球社", "足球社", "童軍社"];
 </script>
 
+// scoped 表示只會套用到這個元件
 <style scoped lang="sass">
 #menu
     width: 100%

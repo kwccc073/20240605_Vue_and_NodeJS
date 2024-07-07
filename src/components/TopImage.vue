@@ -1,3 +1,4 @@
+// lang="pug"表示使用pug語法
 <template lang="pug">
 #top
     // @表示src資料夾
@@ -12,5 +13,4 @@
     img
         width: 994px
         height: 60px
-
 </style>
