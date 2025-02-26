@@ -28,7 +28,16 @@
 * index.html (02:28:45)
 * jsconfig.json
 * vite.config.js
-### 安裝eslint (02:39:58)
+### 安裝eslint的standard語法規範 (02:39:58)
+### 安裝pug&sass (02:46:21)
+### 丙級第一題 (02:49:00)
+* 介紹.vue檔架構
+ * template
+ * script
+ * style
+* App.vue
+ * 拆元件
+ * CSS (03:02:05)
 
 ## 將SVG檔放入網站（影片04:48:08）
 
