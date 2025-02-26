@@ -10,7 +10,25 @@
 * 刪除單個項目 (01:16:52)
 * localStorage (01:19:13)
 
-## 在node.js環境下寫vue.js (01:22:23)
+## Pug
+### 1.pug => 1.html (01:35:41)
+* 註解分兩種：//（會進到html）和 //-（不會進到html）
+
+## SCSS & SASS (02:02:18)
+* SCSS 有大括弧和分號
+* SASS 沒有大括弧和分號
+### 1.sass => 1.css (02:08:40)
+### 1.scss (02:17:41)
+
+## 在node.js環境下建立vue.js專案 (02:20:00)
+### 檔案與資料夾結構說明
+* src
+ * App.vue (02:27:10)
+ * main.js (02:27:20)
+* index.html (02:28:45)
+* jsconfig.json
+* vite.config.js
+### 安裝eslint (02:39:58)
 
 ## 將SVG檔放入網站（影片04:48:08）
 
