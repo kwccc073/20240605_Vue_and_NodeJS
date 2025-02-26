@@ -1,4 +1,5 @@
 <template>
+  <!-- 因為頁面上會放好幾個svg，所以不能用id，改用class -->
   <svg
     version="1.1"
     class="number"
@@ -12,6 +13,7 @@
     enable-background="new 0 0 318.1 520.604"
     xml:space="preserve"
   >
+  <!-- :class="{ class名稱: 判斷的條件) }" -->
     <rect
       class="number-A"
       :class="{ active: '02356789'.includes(data) }"
@@ -91,9 +93,9 @@
 </template>
 
 <script setup>
-// defineProps()不需要export
-// 接收叫data的資料
-defineProps(["data"]);
+// 因為用setup，所以用defineProps()（不用setup要用export default（要寫很多東西））
+// 從外部接收叫data的資料（用來判斷哪幾條線要顯示）
+defineProps(["data"]); // defineProps 只接受陣列或物件所以要用[]包起來，用{}的話可以定義該資料的格式等等東西
 </script>
 
 <style scoped lang="sass">
@@ -102,6 +104,7 @@ defineProps(["data"]);
 rect
     // fill是SVG專用的CSS樣式
     fill: transparent
+    // class有active的時候才會是紅色
     &.active
         fill: #E60012
 </style>

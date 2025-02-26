@@ -1,7 +1,7 @@
 // lang="pug"表示使用pug語法
 <template lang="pug">
 #top
-    // @表示src資料夾
+    // @ =>src資料夾
     img(src="@/assets/logo.png")
 </template>
 

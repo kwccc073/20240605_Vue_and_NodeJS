@@ -1,0 +1,17 @@
+// 定義sass裡面用到的變數
+$primary: blue
+$warning: yellow
+$danger: red
+
+#header
+    display: flex
+    align-items: center
+    align-content: center
+
+    #title
+        color: $primary
+        // & => 指上一層選擇器（這邊是#title）
+        &:hover
+            color: $danger
+        &>.title-text
+            color: $warning

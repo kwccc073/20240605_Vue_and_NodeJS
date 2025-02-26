@@ -15,8 +15,9 @@ TopImage
   DigitNumber(data="9")
 </template>
 
-<!-- setup可以省略很多寫法 -->
+<!-- 加上setup可以省略很多寫法，且不用寫return -->
 <script setup>
+// 引用元件
 import TopImage from './components/TopImage.vue'
 import LeftMenu from './components/LeftMenu.vue'
 import DigitNumber from './components/DigitNumber.vue'

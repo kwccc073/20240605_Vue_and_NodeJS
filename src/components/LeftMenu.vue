@@ -38,6 +38,6 @@ const clubs = ["吉他社", "熱舞社", "棒球社", "羽球社", "足球社", 
         background: url(@/assets/menu1.png)
         background-repeat: no-repeat
         background-position: center
-    &:hover
-        background-image: url(@/assets/menu2.png)
+        &:hover
+            background-image: url(@/assets/menu2.png)
 </style>

@@ -14,6 +14,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      // 只要import出現@，就會預設指到src資料夾 （這樣打包才不會有問題）
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
